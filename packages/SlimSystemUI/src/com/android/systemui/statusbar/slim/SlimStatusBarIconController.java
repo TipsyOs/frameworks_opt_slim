@@ -91,10 +91,6 @@ public class SlimStatusBarIconController {
         mDarkIntensity = darkIntensity;
         mIconTint = (int) ArgbEvaluator.getInstance().evaluate(darkIntensity,
                 mLightModeIconColorSingleTone, mDarkModeIconColorSingleTone);
-        applyIconTint();
     }
 
-    private void applyIconTint() {
-        mSlimBattery.setDarkIntensity(mDarkIntensity);
-    }
 }
